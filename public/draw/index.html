@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+        <script src="p5.js"></script>
+        <script src="sketch.js"></script>
+	<style>
+	html{
+		overflow:hidden;
+	}
+    hra {
+        margin-top:10px;
+    }
+	</style>
+
+    </head>
+    <body>
+    <button onclick="vycistit()">C</button>
+    R:<input type="range" min="0" max="255" value="255" id="red" onchange="nastavitBarvu();">
+    G:<input type="range" min="0" max="255" value="255" id="green" onchange="nastavitBarvu();">
+    B:<input type="range" min="0" max="255" value="255" id="blue" onchange="nastavitBarvu();">
+    S:<input type="range" min="0" max="255" value="36" id="size" onchange="nastavitBarvu();">
+    <div id="hra"></div>
+    </body>
+
+
+
+
+</html>
